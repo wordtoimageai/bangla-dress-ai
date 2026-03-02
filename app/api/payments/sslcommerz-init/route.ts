@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
   const amount = order.designs?.price_bdt || 0;
   if (!amount) return NextResponse.json({ error: "Invalid order amount" }, { status: 400 });
 
-Add SSLCommerz init payment route  const baseUrl = process.env.NEXT_PUBLIC_APP_URL!;
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL!;
 
   const sslRes = await initSSLCommerzPayment({
     total_amount: amount,
