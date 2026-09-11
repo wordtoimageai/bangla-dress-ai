@@ -11,7 +11,7 @@ type Design = {
 };
 
 export default function DesignCard({ design }: { design: Design }) {
-Add components/design-card.tsx  return (
+  return (
     <Link
       href={`/product/${design.id}`}
       className="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition"
